@@ -1,0 +1,82 @@
+nav{
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    font-size: 75%;
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* margin-top: 5px; */
+}
+
+.menuhorizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menuhorizontal >li >a{
+    display: block;
+    padding: 15px 20px;
+    color: grey;
+    text-decoration: none;
+}
+
+.menuhorizontal >li:hover{
+    background-color: #80808094;
+}
+
+.menuvertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    /* width: 200px; */
+    background-color:white;
+}
+
+.menuhorizontal li:hover .menuvertical{
+    display: block;
+}
+
+.menuvertical li:hover{
+    background-color: #80808094;
+}
+
+.menuvertical li a{
+    display: block;
+    color: grey;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+#SobreNosotros{
+    background-color: #222;
+    background-image: url(../I3/Imagenes/sbn.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+
+body{
+    background-color: #222;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+#name{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 36px;
+}
+
+#introduccion{
+    border-radius: 6px;
+    background-color: grey;
+    margin: 15px;
+    padding: 5px;
+}
+

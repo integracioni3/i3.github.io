@@ -1,0 +1,91 @@
+.itemform{
+    display: flex;
+    grid-template-columns: 150px 350px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.itemform label{
+    font-weight: 700;
+}
+
+.itemform input,.itemform textarea{
+    border-radius: 5px;
+    border: 1px;
+}
+
+input[type="submit"]{
+    background-color: grey;
+    color: white;
+    grid-column: 2/3;
+    padding: 10px;
+    justify-self: end;
+}
+
+#correoA{
+    opacity: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #222;
+    color: white;
+}
+
+#copy{
+    background-color:  black;
+    background-size: cover;
+}
+
+p{
+    padding: 5%;
+}
+
+nav{
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    font-size: 75%;
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menuhorizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menuhorizontal >li >a{
+    display: block;
+    padding: 15px 20px;
+    color: grey;
+    text-decoration: none;
+}
+
+.menuhorizontal >li:hover{
+    background-color: #80808094;
+}
+
+.menuvertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    /* width: 200px; */
+    background-color:white;
+}
+
+.menuhorizontal li:hover .menuvertical{
+    display: block;
+}
+
+.menuvertical li:hover{
+    background-color: #80808094;
+}
+
+.menuvertical li a{
+    display: block;
+    color: grey;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}

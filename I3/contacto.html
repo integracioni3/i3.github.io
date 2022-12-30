@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="shortcut icon" href="../I3/favicon_io/favicon-32x32.png" type="image/x-icon">
+    <title>Contacto I3</title>
+</head>
+<body>
+    <nav>
+        <ul class="menuhorizontal">
+            <li><a href="I3.html">Inicio</a></li>
+            <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+            <li>
+                <a href="Servicios.html">Servicios</a>
+                    <ul class="menuvertical">
+                        <li><a href="Servicios.html #instalacion">Servicios Integrales</a></li>
+                        <li><a href="Servicios.html #mantenimiento">Mantenimiento</a></li>
+                        <li><a href="Servicios.html #ingenieria">Ingenieria</a></li>
+                        <li><a href="Servicios.html #cctv">Seguridad Industrial</a></li>
+                        <li><a href="Servicios.html">Seguridad Vial</a></li>
+                        <li><a href="Servicios.html">Seguridad Comercial</a></li>
+                        <li><a href="Servicios.html">Seguridad Residencial</a></li>
+                    </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section id="contactar">
+        <h2>Contacto</h2>
+        <form id="form" action="">
+        <div class="itemform">
+            <label for="name">Nombre  &nbsp&nbsp&nbsp&nbsp</label> <input type="text" id="nombre" name="nombre" minlength="2" maxlength="64" size="32" required>
+        </div>
+        <div class="itemform">
+            <label for="name">Empresa &nbsp&nbsp&nbsp</label>
+            <input type="text" id="Empresa" name="Empresa" minlength="2" maxlength="64" size="32">
+        </div>
+        <div class="itemform">    
+            <label for="email">Email &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="email" id="email" name="Email" minlength="6" maxlength="64" size="32" required>
+        </div>
+        <div class="itemform">
+            <label for="message">Mensaje &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <textarea name="message" id="menssage" cols="30" rows="10"></textarea>
+        </div>
+        <div class="itemform">
+            <input type="submit" name="Enviar" value="CONTACTAR">
+        </div>
+        </form>
+        <a href="osantana@integracioni3.com" id="correoA">mail</a>
+    </section>
+</article> 
+</script>
+</body>
+    <script>
+    const $form = document.querySelector("#form")
+    const $buttonMailto = document.querySelector("#correoA")
+
+    $form.addEventListener('submit', handleSubmit)
+
+    function handleSubmit(event){
+        event.preventDefault()
+        const form = new FormData(this)
+        console.log(form.get('name'))
+        $buttonMailto.setAttribute('href', `mailto:osantana@integracioni3.com?subjec= ${form.get('name')} ${form.get('email')}&body= ${form.get('message')}`)
+        $buttonMailto.click()
+    } 

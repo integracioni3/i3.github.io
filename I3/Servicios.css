@@ -1,0 +1,137 @@
+ nav{
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    font-size: 75%;
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menuhorizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menuhorizontal >li >a{
+    display: block;
+    padding: 15px 20px;
+    color: grey;
+    text-decoration: none;
+}
+
+.menuhorizontal >li:hover{
+    background-color: #80808094;
+}
+
+.menuvertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    /* width: 200px; */
+    background-color:white;
+}
+
+.menuhorizontal li:hover .menuvertical{
+    display: block;
+}
+
+.menuvertical li:hover{
+    background-color: #80808094;
+}
+
+.menuvertical li a{
+    display: block;
+    color: grey;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+#Servicios{
+    background-image: url(../I3/Imagenes/ingenieria.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+
+body{
+    background-color: #222;
+}
+
+.section{
+    padding: 3% 7% 2% 6%;
+    color: white;
+    background-color: #222;
+}
+
+#ingenieria{
+    border-radius: 6px;
+    color: white;
+    background-color: grey;
+    padding: 5px;
+}
+
+#instalacion{
+    color: white;
+    border-radius: 6px;
+    background-color: grey;
+    padding: 5px;
+    
+}
+
+#imgInstalacion{
+    padding: 0% 6% 2% 33%;
+}
+
+h1{
+    color: white;
+    padding: 0% 0% 2% 1%;
+    font-size: 28px;
+}
+
+#mantenimiento{
+    color: white;
+    border-radius: 6px;
+    background-color: grey;
+    padding: 5px;
+}
+
+#imgmantenimiento{
+    padding: -1% 6% 2% 30%;
+}
+
+#cctv{
+    background-color: grey;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+#imgcctv{
+    padding: 2% 6% 1% 30%;
+}
+
+#vial{
+    color: white;
+    border-radius: 6px;
+    background-color: grey;
+    padding: 5px;
+
+}
+
+#comercial{
+    color: white;
+    border-radius: 6px;
+    background-color: grey;
+    padding: 5px;
+}
+
+#residencial{
+    color: white;
+    border-radius: 6px;
+    background-color: grey;
+    padding: 5px;
+}
